@@ -21,12 +21,6 @@
      .h4{
        color: white;
      }
-     nav.clear{
-       background: rgba{0,0,0,0};
-     }
-     nav.transparent{
-       background: rgba{0,0,0,0.6};
-     }
    </style>
   </head>
 
@@ -116,9 +110,9 @@
     <script>
       $document.ready(function(){
         if($(window).scrollTop()==0){
-          $('nav').addClass('clear');
+          $('nav').addClass('red');
         }else{
-          $('nav').addClass('transparent');
+          $('nav').removeClass('red');
         }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
