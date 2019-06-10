@@ -15,15 +15,12 @@
        position: fixed;
        height: 64px;
      }
-     nav{
-       background: rgba(0,0,0,0,0.7);
-     }
    </style>
   </head>
 
   <body>
     <div class="navbar-fixed">
-      <nav>
+      <nav style="background: rgba(0,0,0,0,0.65)">
        <div class="nav-wrapper">
          <a href="#!" class="center brand-logo">Logo</a>
          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -99,22 +96,11 @@
         </div>
       </div>
     </div>
+    
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="materializeJS/materialize.js"></script>
     <script src="JS/initLanding.js"></script>
-    <!--JavaScript for shifting from solid header to transparent-->
-    <script>
-      $document.ready(function(){
-        $(window).scroll(function(){
-          if($(window).scrollTop()>100){
-            $('nav').addClass('red');
-          }else{
-            $('nav').removeClass('red');
-          }
-        });
-      });
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267370-1"></script>
     <script>
