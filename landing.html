@@ -101,14 +101,16 @@
     <script src="materializeJS/materialize.js"></script>
     <script src="JS/initLanding.js"></script>
     <!--JavaScript for shifting from solid header to transparent-->
-    <!--<script>
+    <script>
       $document.ready(function(){
-        if($(window).scrollTop()==0){
-          $('nav').addClass('red');
-        }else{
-          $('nav').removeClass('red');
-        }
-    -->
+        $(window).scroll(function(){
+          if($(window).scrollTop()>300){
+            $('nav').addClass('red');
+          }else{
+            $('nav').removeClass('red');
+          }
+        });
+      });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267370-1"></script>
