@@ -107,6 +107,15 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="materializeJS/materialize.js"></script>
     <script src="JS/initLanding.js"></script>
+    <!--JavaScript for shifting from solid header to transparent-->
+    <script>
+      $document.ready(function(){
+        if($(window).scrollTop()==0){
+          $('nav').css({"background": "rgba(0,0,0,0)"});
+        }else{
+          $('nav').css({"background": "rgba(0,0,0,0.6)"});
+        }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141267370-1"></script>
     <script>
